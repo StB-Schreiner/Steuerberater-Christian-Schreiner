@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=1100" />
   <title>Steuerberater Christian Schreiner</title>
   <style>
     html {
@@ -20,10 +20,10 @@
     }
     header {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       background: #fff;
-      max-width: 1100px;
-      margin: auto;
+      width: 1100px;
+      margin: 0 auto;
       padding: 0;
     }
     header .portrait {
@@ -43,7 +43,7 @@
       justify-content: center;
     }
     header h1 {
-      font-size: 2.5em;
+      font-size: 38px;
       margin-bottom: 10px;
     }
     .button {
@@ -56,8 +56,8 @@
       border-radius: 4px;
     }
     section, footer {
-      max-width: 1100px;
-      margin: auto;
+      width: 1100px;
+      margin: 0 auto;
       padding: 40px 20px;
     }
     .leistungen {
@@ -71,12 +71,12 @@
     }
     .cards {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       gap: 20px;
       justify-content: space-between;
     }
     .card {
-      flex: 1 1 30%;
+      flex: 0 0 30%;
       background: #111;
       border-radius: 8px;
       padding: 20px;
@@ -106,10 +106,9 @@
       text-decoration: none;
       border-radius: 4px;
     }
-    /* Datenschutzerklärung Styles */
     #datenschutzerklaerung {
       display: none;
-      max-width: 1100px;
+      width: 1100px;
       margin: 40px auto;
       padding: 20px;
       background: #fff;
@@ -129,7 +128,7 @@
       <img src="portrait.png" alt="Porträt Christian Schreiner" />
     </div>
     <div class="text" style="padding: 60px 80px;">
-      <h1 style="font-size: 3.8em; line-height: 1.4;">Ihr Steuer-<br>berater für<br>Ihren Erfolg</h1>
+      <h1>Ihr Steuer-<br>berater für<br>Ihren Erfolg</h1>
       <p style="margin-top: 30px;">Sie haben Post vom Finanzamt und verstehen<br> nur Bahnhof?<br><br><br>
         Sie möchten Ihre steuerliche Situation rechtssicher klären bevor es das Finanzamt tut?<br><br><br>
         Ihr privater oder betrieblicher Steuerbescheid<br> ist fehlerhaft?<br><br><br>
@@ -141,7 +140,7 @@
   <div style="height: 18px;"></div>
 
   <section class="leistungen">
-    <h2 style="text-align: center;">Meine Leistungen</h2><br>
+    <h2>Meine Leistungen</h2><br>
     <div class="cards">
       <div class="card">
         <img src="dokument.png" alt="Steuererklärungen" />
@@ -161,11 +160,15 @@
     </div>
   </section>
 
+  <div style="height: 18px;"></div>
+
   <section class="block" style="
     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('hintergrund-wasserzeichen.jpg') no-repeat center center;
     background-size: cover;
     color: #000;
     padding: 40px;
+    width: 1100px;
+    margin: 0 auto;
   ">
     <h2 style="text-align: center;">Über mich</h2><br><br>
     <p><center><strong>2015 – 2018:</strong> Studium an der Fachhochschule für Verwaltung und Rechtspflege (Diplom Finanzwirt)</center></p>
@@ -176,7 +179,9 @@
     <p><center>Meine Expertise bietet Ihnen einen umfassenden Vorteil, da sie praktische Erfahrung aus dem Berufsalltag in<br> einem Industrieunternehmen mit tiefgreifendem Verständnis aus behördlicher Sicht verbindet.</center></p>
   </section>
 
-  <section style="background-color: #000; color: #fff; display: flex; flex-wrap: wrap; padding: 0; max-width: 1100px; margin: auto;">
+  <div style="height: 18px;"></div>
+
+  <section style="background-color: #000; color: #fff; display: flex; flex-wrap: nowrap; padding: 0; width: 1100px; margin: auto;">
     <div style="flex: 0 0 50%; padding: 40px;">
       <h2>Honorar</h2>
       <p>Das Honorar von Steuerberatern ist in der <strong>Steuerberatervergütungsverordnung (StBVV)</strong> geregelt. Eine präzise Gebührenauskunft im Vorfeld ist leider nicht möglich, da die genaue Berechnung – basierend auf Gegenstandswert, Zeit- und Beratungsaufwand – erst nach Abschluss der Leistung feststeht.</p>
@@ -198,8 +203,7 @@
     <a href="https://wa.me/4916099606527?text=Guten%20Tag%2C%20ich%20interessiere%20mich%20für%20eine%20steuerliche%20Beratung." target="_blank" title="WhatsApp öffnen">Kontakt per WhatsApp</a>
   </footer>
 
-  <!-- Impressum & Datenschutzerklärung -->
-  <section class="block" style="text-align: center; font-size: 14px; color: #555; background: none;">
+  <section class="block" style="text-align: center; font-size: 14px; color: #555; background: none; width: 1100px; margin: auto;">
     <h2>Impressum</h2>
     <p>Christian Schreiner<br>Diplom Finanzwirt (FH)<br>Steuerberater<br>Adresse: Bahnhofstr. 24, 83410 Laufen<br>
       Telefon: +49 160 99606527<br>E-Mail: info@steuerberater-schreiner.de<br><br>Berufsbezeichnung: Steuerberater (verliehen in Deutschland)<br>
@@ -215,7 +219,6 @@
     <p>&copy; 2025 Christian Schreiner – Alle Rechte vorbehalten</p>
   </section>
 
-  <!-- Versteckte Datenschutzerklärung -->
   <section id="datenschutzerklaerung">
     <h2>Datenschutzerklärung</h2>
     <p>Der Schutz Ihrer persönlichen Daten ist uns wichtig. Wir verarbeiten Ihre personenbezogenen Daten daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TMG).</p>
@@ -242,7 +245,6 @@
     <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht.</p>
   </section>
 
-  <!-- JavaScript zum Ein-/Ausblenden -->
   <script>
     const btn = document.getElementById('showDatenschutz');
     const datenschutz = document.getElementById('datenschutzerklaerung');

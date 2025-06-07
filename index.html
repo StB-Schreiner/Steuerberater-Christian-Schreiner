@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="format-detection" content="telephone=no">
-  <meta name="viewport" content="width=1100, user-scalable=yes" />
+  <meta name="viewport" content="width=1100, initial-scale=1, maximum-scale=1, user-scalable=no" />
   <title>Steuerberater Christian Schreiner</title>
   <style>
     html {
@@ -114,6 +114,14 @@ min-width: 1100px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       text-align: left;
     }
+@media (max-width: 1099px) {
+  html {
+    transform: scale(calc(100vw / 1100));
+    transform-origin: top left;
+    width: 1100px;
+    overflow-x: hidden;
+  }
+}
   </style>
 </head>
 <body>

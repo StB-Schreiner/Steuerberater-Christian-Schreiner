@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=1100" />
+  <meta name="viewport" content="width=1100, user-scalable=yes" />
   <title>Steuerberater Christian Schreiner</title>
   <style>
     html {
@@ -12,19 +12,19 @@
       box-sizing: border-box;
     }
     body {
-      color: #333;
+      color: #222;
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background-color: #f5f5f5;
-      color: #222;
+    }
+    .wrapper {
+      width: 1100px;
+      margin: 0 auto;
     }
     header {
       display: flex;
       flex-wrap: nowrap;
       background: #fff;
-      width: 1100px;
-      margin: 0 auto;
-      padding: 0;
     }
     header .portrait {
       flex: 0 0 50%;
@@ -33,11 +33,10 @@
       display: block;
       width: 100%;
       height: auto;
-      border-radius: 0;
     }
     header .text {
       flex: 0 0 50%;
-      padding: 40px;
+      padding: 60px 80px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -56,8 +55,6 @@
       border-radius: 4px;
     }
     section, footer {
-      width: 1100px;
-      margin: 0 auto;
       padding: 40px 20px;
     }
     .leistungen {
@@ -89,13 +86,9 @@
     .card h3 {
       color: #fff;
     }
-    section h2 {
-      margin-bottom: 20px;
-    }
     footer {
       background: #fff;
       text-align: center;
-      padding: 40px 20px;
     }
     .kontakt a {
       display: inline-block;
@@ -108,8 +101,6 @@
     }
     #datenschutzerklaerung {
       display: none;
-      width: 1100px;
-      margin: 40px auto;
       padding: 20px;
       background: #fff;
       color: #222;
@@ -121,139 +112,125 @@
   </style>
 </head>
 <body>
-  <div style="height: 18px;"></div>
+  <div class="wrapper">
+    <div style="height: 18px;"></div>
 
-  <header>
-    <div class="portrait">
-      <img src="portrait.png" alt="Porträt Christian Schreiner" />
-    </div>
-    <div class="text" style="padding: 60px 80px;">
-      <h1>Ihr Steuer-<br>berater für<br>Ihren Erfolg</h1>
-      <p style="margin-top: 30px;">Sie haben Post vom Finanzamt und verstehen<br> nur Bahnhof?<br><br><br>
-        Sie möchten Ihre steuerliche Situation rechtssicher klären bevor es das Finanzamt tut?<br><br><br>
-        Ihr privater oder betrieblicher Steuerbescheid<br> ist fehlerhaft?<br><br><br>
-        Einspruch eingelegt?<br>Klage erhoben?<br>Und jetzt?<br><br></p>
-      <a href="#kontaktbereich" class="button">Nehmen Sie unverbindlich Kontakt auf</a>
-    </div>
-  </header>
-
-  <div style="height: 18px;"></div>
-
-  <section class="leistungen">
-    <h2>Meine Leistungen</h2><br>
-    <div class="cards">
-      <div class="card">
-        <img src="dokument.png" alt="Steuererklärungen" />
-        <h3>Steuererklärungen</h3>
-        <p>Ich erstelle Ihre Steuererklärungen zuverlässig, kompetent und stets auf dem neuesten Stand der Gesetzgebung und Rechtsprechung.</p>
+    <header>
+      <div class="portrait">
+        <img src="portrait.png" alt="Porträt Christian Schreiner" />
       </div>
-      <div class="card">
-        <img src="waage.png" alt="Prozessvertretung" />
-        <h3>Prozessvertretung</h3>
-        <p>Ich übernehme für Sie sämtliche Verhandlungen mit dem Finanzamt und vertrete Sie sowohl im Einspruchsverfahren als auch in Klageverfahren vor den Finanzgerichten.</p>
+      <div class="text">
+        <h1>Ihr Steuer-<br>berater für<br>Ihren Erfolg</h1>
+        <p style="margin-top: 30px;">Sie haben Post vom Finanzamt und verstehen<br> nur Bahnhof?<br><br><br>
+          Sie möchten Ihre steuerliche Situation rechtssicher klären bevor es das Finanzamt tut?<br><br><br>
+          Ihr privater oder betrieblicher Steuerbescheid<br> ist fehlerhaft?<br><br><br>
+          Einspruch eingelegt?<br>Klage erhoben?<br>Und jetzt?<br><br></p>
+        <a href="#kontaktbereich" class="button">Nehmen Sie unverbindlich Kontakt auf</a>
       </div>
-      <div class="card">
-        <img src="handschlag.png" alt="Steuerliche Beratung" />
-        <h3>Steuerliche Beratung</h3>
-        <p>Ob Tax Compliance, Steuerplanung oder Betriebsprüfung: Ich stehe Ihnen mit Expertise und individuellen Lösungen zur Seite - präzise, rechtssicher und zukunftsorientiert.</p>
+    </header>
+
+    <div style="height: 18px;"></div>
+
+    <section class="leistungen">
+      <h2>Meine Leistungen</h2><br>
+      <div class="cards">
+        <div class="card">
+          <img src="dokument.png" alt="Steuererklärungen" />
+          <h3>Steuererklärungen</h3>
+          <p>Ich erstelle Ihre Steuererklärungen zuverlässig, kompetent und stets auf dem neuesten Stand der Gesetzgebung und Rechtsprechung.</p>
+        </div>
+        <div class="card">
+          <img src="waage.png" alt="Prozessvertretung" />
+          <h3>Prozessvertretung</h3>
+          <p>Ich übernehme für Sie sämtliche Verhandlungen mit dem Finanzamt und vertrete Sie sowohl im Einspruchsverfahren als auch in Klageverfahren vor den Finanzgerichten.</p>
+        </div>
+        <div class="card">
+          <img src="handschlag.png" alt="Steuerliche Beratung" />
+          <h3>Steuerliche Beratung</h3>
+          <p>Ob Tax Compliance, Steuerplanung oder Betriebsprüfung: Ich stehe Ihnen mit Expertise und individuellen Lösungen zur Seite - präzise, rechtssicher und zukunftsorientiert.</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <div style="height: 18px;"></div>
+    <div style="height: 18px;"></div>
 
-  <section class="block" style="
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('hintergrund-wasserzeichen.jpg') no-repeat center center;
-    background-size: cover;
-    color: #000;
-    padding: 40px;
-    width: 1100px;
-    margin: 0 auto;
-  ">
-    <h2 style="text-align: center;">Über mich</h2><br><br>
-    <p><center><strong>2015 – 2018:</strong> Studium an der Fachhochschule für Verwaltung und Rechtspflege (Diplom Finanzwirt)</center></p>
-    <p><center><strong>2015 – 2025:</strong> Beschäftigung in mehreren Abteilungen in lokalen Finanzämtern</center></p>
-    <p><center><strong>2025:</strong> Bestellung zum Steuerberater</center></p>
-    <p><center><strong>2025:</strong> Beschäftigung als angestellter Syndikus-Steuerberater und Tax Manager in einem international tätigen Industrieunternehmen</center></p>
-    <div style="height: 24px;"></div>
-    <p><center>Meine Expertise bietet Ihnen einen umfassenden Vorteil, da sie praktische Erfahrung aus dem Berufsalltag in<br> einem Industrieunternehmen mit tiefgreifendem Verständnis aus behördlicher Sicht verbindet.</center></p>
-  </section>
+    <section class="block" style="
+      background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('hintergrund-wasserzeichen.jpg') no-repeat center center;
+      background-size: cover;
+      color: #000;
+      padding: 40px;
+    ">
+      <h2 style="text-align: center;">Über mich</h2><br><br>
+      <p><center><strong>2015 – 2018:</strong> Studium an der Fachhochschule für Verwaltung und Rechtspflege (Diplom Finanzwirt)</center></p>
+      <p><center><strong>2015 – 2025:</strong> Beschäftigung in mehreren Abteilungen in lokalen Finanzämtern</center></p>
+      <p><center><strong>2025:</strong> Bestellung zum Steuerberater</center></p>
+      <p><center><strong>seit 2025:</strong> Beschäftigung als angestellter Syndikus-Steuerberater und Tax Manager in einem international tätigen Industrieunternehmen</center></p>
+      <div style="height: 24px;"></div>
+      <p><center>Meine Expertise bietet Ihnen einen umfassenden Vorteil, da sie praktische Erfahrung aus dem Berufsalltag in einem Industrieunternehmen mit tiefgreifendem Verständnis aus behördlicher Sicht verbindet.</center></p>
+    </section>
 
-  <div style="height: 18px;"></div>
+    <div style="height: 18px;"></div>
 
-  <section style="background-color: #000; color: #fff; display: flex; flex-wrap: nowrap; padding: 0; width: 1100px; margin: auto;">
-    <div style="flex: 0 0 50%; padding: 40px;">
-      <h2>Honorar</h2>
-      <p>Das Honorar von Steuerberatern ist in der <strong>Steuerberatervergütungsverordnung (StBVV)</strong> geregelt. Eine präzise Gebührenauskunft im Vorfeld ist leider nicht möglich, da die genaue Berechnung – basierend auf Gegenstandswert, Zeit- und Beratungsaufwand – erst nach Abschluss der Leistung feststeht.</p>
-      <p>Die StBVV legt dabei keine festen Beiträge fest, sondern definiert einen <strong>Gebührenrahmen</strong>. Innerhalb dieses Rahmens werden die Gebühren nach <strong>Umfang, Schwierigkeit und Haftungsrisiko</strong> der jeweiligen Tätigkeit bemessen.</p>
-    </div>
-    <div style="flex: 0 0 50%;">
-      <img src="honorar-hintergrund.jpg" alt="Handschlag" style="width: 100%; height: 100%; object-fit: cover;" />
-    </div>
-  </section>
+    <section style="background-color: #000; color: #fff; display: flex; flex-wrap: nowrap; padding: 0;">
+      <div style="flex: 0 0 50%; padding: 40px;">
+        <h2>Honorar</h2>
+        <p>Das Honorar von Steuerberatern ist in der <strong>Steuerberatervergütungsverordnung (StBVV)</strong> geregelt. Eine präzise Gebührenauskunft im Vorfeld ist leider nicht möglich, da die genaue Berechnung – basierend auf Gegenstandswert, Zeit- und Beratungsaufwand – erst nach Abschluss der Leistung feststeht.</p>
+        <p>Die StBVV legt dabei keine festen Beiträge fest, sondern definiert einen <strong>Gebührenrahmen</strong>. Innerhalb dieses Rahmens werden die Gebühren nach <strong>Umfang, Schwierigkeit und Haftungsrisiko</strong> der jeweiligen Tätigkeit bemessen.</p>
+      </div>
+      <div style="flex: 0 0 50%;">
+        <img src="honorar-hintergrund.jpg" alt="Handschlag" style="width: 100%; height: 100%; object-fit: cover;" />
+      </div>
+    </section>
 
-  <div style="height: 18px;"></div>
+    <div style="height: 18px;"></div>
 
-  <footer class="kontakt" id="kontaktbereich">
-    <h2>Kontakt</h2>
-    <p><strong>Christian Schreiner</strong><br>
-      Diplom Finanzwirt (FH)<br>
-      Steuerberater</p>
-    <a href="mailto:info@steuerberater-schreiner.de?subject=Anfrage über Website" title="E-Mail senden">Nachricht schreiben</a>
-    <a href="https://wa.me/4916099606527?text=Guten%20Tag%2C%20ich%20interessiere%20mich%20für%20eine%20steuerliche%20Beratung." target="_blank" title="WhatsApp öffnen">Kontakt per WhatsApp</a>
-  </footer>
+    <footer class="kontakt" id="kontaktbereich">
+      <h2>Kontakt</h2>
+      <p><strong>Christian Schreiner</strong><br>
+        Diplom Finanzwirt (FH)<br>
+        Steuerberater</p>
+      <a href="mailto:info@steuerberater-schreiner.de?subject=Anfrage über Website" title="E-Mail senden">Nachricht schreiben</a>
+      <a href="https://wa.me/4916099606527?text=Guten%20Tag%2C%20ich%20interessiere%20mich%20für%20eine%20steuerliche%20Beratung." target="_blank" title="WhatsApp öffnen">Kontakt per WhatsApp</a>
+    </footer>
 
-  <section class="block" style="text-align: center; font-size: 14px; color: #555; background: none; width: 1100px; margin: auto;">
-    <h2>Impressum</h2>
-    <p>Christian Schreiner<br>Diplom Finanzwirt (FH)<br>Steuerberater<br>Adresse: Bahnhofstr. 24, 83410 Laufen<br>
-      Telefon: +49 160 99606527<br>E-Mail: info@steuerberater-schreiner.de<br><br>Berufsbezeichnung: Steuerberater (verliehen in Deutschland)<br>
-     Zuständige Kammer: Steuerberaterkammer München, Nederlinger Str. 9, 80638 München<br><br><strong>Haftungsausschluss:</strong><br>
-     Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links.<br>Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
-  <br></p></p>
+    <section class="block" style="text-align: center; font-size: 14px; color: #555; background: none;">
+      <h2>Impressum</h2>
+      <p>Christian Schreiner<br>Diplom Finanzwirt (FH)<br>Steuerberater<br>Adresse: Bahnhofstr. 24, 83410 Laufen<br>
+        Telefon: +49 160 99606527<br>E-Mail: info@steuerberater-schreiner.de<br><br>Berufsbezeichnung: Steuerberater (verliehen in Deutschland)<br>
+       Zuständige Kammer: Steuerberaterkammer München, Nederlinger Str. 9, 80638 München<br><br><strong>Haftungsausschluss:</strong><br>
+       Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links.<br>Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+    <br></p>
 
+      <h2>Datenschutzerklärung</h2>
+      <p>Ihre Daten werden vertraulich behandelt und nur im Rahmen der gesetzlichen Vorschriften verwendet.<br>
+        Weitere Informationen finden Sie unter <a href="#" id="showDatenschutz" style="color: #333;">Datenschutzrichtlinien</a>.
+      </p>
+
+      <p>&copy; 2025 Christian Schreiner – Alle Rechte vorbehalten</p>
+    </section>
+
+    <section id="datenschutzerklaerung">
     <h2>Datenschutzerklärung</h2>
-    <p>Ihre Daten werden vertraulich behandelt und nur im Rahmen der gesetzlichen Vorschriften verwendet.<br>
-      Weitere Informationen finden Sie unter <a href="#" id="showDatenschutz" style="color: #333;">Datenschutzrichtlinien</a>.
-    </p>
-
-    <p>&copy; 2025 Christian Schreiner – Alle Rechte vorbehalten</p>
+    <p>Der Schutz Ihrer persönlichen Daten ist mir wichtig. Ich verarbeite Ihre personenbezogenen Daten daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (insbesondere DSGVO und TMG).</p>
+    <h3>1. Verantwortlicher</h3>
+    <p>Christian Schreiner<br>Bahnhofstr. 24<br>83410 Laufen<br>E-Mail: info@steuerberater-schreiner.de</p>
+    <h3>2. Art der erhobenen Daten und Zweck der Verarbeitung</h3>
+    <p>Wenn Sie per E-Mail oder WhatsApp Kontakt mit mir aufnehmen, werden die von Ihnen freiwillig übermittelten Daten (z. B. Name, E-Mail-Adresse, Telefonnummer, Nachricht) verarbeitet, um Ihre Anfrage zu beantworten und zur weiteren Kommunikation.</p>
+    <h3>3. Rechtsgrundlagen der Datenverarbeitung</h3>
+    <p>Die Verarbeitung Ihrer Daten erfolgt gemäß Art. 6 Abs. 1 lit. b DSGVO (zur Durchführung vorvertraglicher Maßnahmen) sowie ggf. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an effizienter Kommunikation).</p>
+    <h3>4. Weitergabe von Daten</h3>
+    <p>Eine Weitergabe Ihrer Daten an Dritte erfolgt nur, wenn sie gesetzlich vorgeschrieben ist oder zur Vertragserfüllung erforderlich (z. B. Finanzbehörden, Steuerkanzlei-Software-Anbieter).</p>
+    <h3>5. Nutzung von WhatsApp</h3>
+    <p>Wenn Sie den WhatsApp-Link auf dieser Website verwenden, wird eine Verbindung zu den Servern von WhatsApp (ein Dienst der Meta Platforms Ireland Limited) aufgebaut. Dabei werden möglicherweise personenbezogene Daten wie Ihre IP-Adresse oder Geräteinformationen an Meta übermittelt. Ich empfehle Ihnen, sich vor der Nutzung über die <a href="https://www.whatsapp.com/legal/privacy-policy-eea" target="_blank" rel="noopener noreferrer">Datenschutzrichtlinien von WhatsApp</a> zu informieren.</p>
+    <h3>6. Cookies und Tracking</h3>
+    <p>Diese Website verwendet nach aktuellem Stand keine Cookies und keine Analyse- oder Tracking-Tools. Es werden keine personenbezogenen Daten automatisch erfasst oder gespeichert.</p>
+    <h3>7. Ihre Rechte</h3>
+    <p>Sie haben das Recht auf Auskunft über Ihre bei mir gespeicherten personenbezogenen Daten, das Recht auf Berichtigung, Löschung, Einschränkung der Verarbeitung sowie auf Widerspruch gegen die Verarbeitung. Kontaktieren Sie mich dazu bitte unter den oben genannten Kontaktdaten.</p>
+    <h3>8. Datensicherheit</h3>
+    <p>Ihre Daten werden nach dem aktuellen Stand der Technik vor unbefugtem Zugriff geschützt. Die Kommunikation per E-Mail oder WhatsApp erfolgt unverschlüsselt und kann unter Umständen von Dritten eingesehen werden.</p>
+    <h3>9. Änderungen dieser Datenschutzerklärung</h3>
+    <p>Ich behalte mir vor, diese Datenschutzerklärung anzupassen, um sie an aktuelle rechtliche Anforderungen oder Änderungen meiner Leistungen anzupassen. Die jeweils aktuelle Version ist auf dieser Website abrufbar.</p>
   </section>
-
-  <section id="datenschutzerklaerung">
-  <h2>Datenschutzerklärung</h2>
-
-  <p>Der Schutz Ihrer persönlichen Daten ist mir wichtig. Ich verarbeite Ihre personenbezogenen Daten daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (insbesondere DSGVO und TMG).</p>
-
-  <h3>1. Verantwortlicher</h3>
-  <p>Christian Schreiner<br>
-     Bahnhofstr. 24<br>
-     83410 Laufen<br>
-     E-Mail: info@steuerberater-schreiner.de</p>
-
-  <h3>2. Art der erhobenen Daten und Zweck der Verarbeitung</h3>
-  <p>Wenn Sie per E-Mail oder WhatsApp Kontakt mit mir aufnehmen, werden die von Ihnen freiwillig übermittelten Daten (z. B. Name, E-Mail-Adresse, Telefonnummer, Nachricht) verarbeitet, um Ihre Anfrage zu beantworten und zur weiteren Kommunikation.</p>
-
-  <h3>3. Rechtsgrundlagen der Datenverarbeitung</h3>
-  <p>Die Verarbeitung Ihrer Daten erfolgt gemäß Art. 6 Abs. 1 lit. b DSGVO (zur Durchführung vorvertraglicher Maßnahmen) sowie ggf. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an effizienter Kommunikation).</p>
-
-  <h3>4. Weitergabe von Daten</h3>
-  <p>Eine Weitergabe Ihrer Daten an Dritte erfolgt nur, wenn sie gesetzlich vorgeschrieben ist oder zur Vertragserfüllung erforderlich (z. B. Finanzbehörden, Steuerkanzlei-Software-Anbieter).</p>
-
-  <h3>5. Nutzung von WhatsApp</h3>
-  <p>Wenn Sie den WhatsApp-Link auf dieser Website verwenden, wird eine Verbindung zu den Servern von WhatsApp (ein Dienst der Meta Platforms Ireland Limited) aufgebaut. Dabei werden möglicherweise personenbezogene Daten wie Ihre IP-Adresse oder Geräteinformationen an Meta übermittelt. Ich empfehle Ihnen, sich vor der Nutzung über die <a href="https://www.whatsapp.com/legal/privacy-policy-eea" target="_blank" rel="noopener noreferrer">Datenschutzrichtlinien von WhatsApp</a> zu informieren.</p>
-
-  <h3>6. Cookies und Tracking</h3>
-  <p>Diese Website verwendet nach aktuellem Stand keine Cookies und keine Analyse- oder Tracking-Tools. Es werden keine personenbezogenen Daten automatisch erfasst oder gespeichert.</p>
-
-  <h3>7. Ihre Rechte</h3>
-  <p>Sie haben das Recht auf Auskunft über Ihre bei mir gespeicherten personenbezogenen Daten, das Recht auf Berichtigung, Löschung, Einschränkung der Verarbeitung sowie auf Widerspruch gegen die Verarbeitung. Kontaktieren Sie mich dazu bitte unter den oben genannten Kontaktdaten.</p>
-
-  <h3>8. Datensicherheit</h3>
-  <p>Ihre Daten werden nach dem aktuellen Stand der Technik vor unbefugtem Zugriff geschützt. Die Kommunikation per E-Mail oder WhatsApp erfolgt unverschlüsselt und kann unter Umständen von Dritten eingesehen werden.</p>
-
-  <h3>9. Änderungen dieser Datenschutzerklärung</h3>
-  <p>Ich behalte mir vor, diese Datenschutzerklärung anzupassen, um sie an aktuelle rechtliche Anforderungen oder Änderungen meiner Leistungen anzupassen. Die jeweils aktuelle Version ist auf dieser Website abrufbar.</p>
-</section>
 
   <script>
     const btn = document.getElementById('showDatenschutz');
@@ -271,5 +248,6 @@
       }
     });
   </script>
+  </div>
 </body>
 </html>

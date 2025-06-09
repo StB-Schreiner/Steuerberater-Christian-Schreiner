@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="format-detection" content="telephone=no">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="viewport" content="width=1100, user-scalable=yes" />
   <title>Steuerberater Christian Schreiner</title>
   <style>
     html {
       scroll-behavior: smooth;
+overflow-x: auto;
     }
     * {
       box-sizing: border-box;
@@ -17,30 +18,26 @@
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background-color: #f5f5f5;
+min-width: 1100px;
+  overflow-x: auto;
     }
-
     .wrapper {
-      max-width: 1100px;
+      width: 1100px;
       margin: 0 auto;
-      padding: 0 20px;
+  min-width: 1100px;
     }
-
     header {
       display: flex;
       flex-wrap: nowrap;
       background: #fff;
-      align-items: stretch;
-      height: auto;
     }
     header .portrait {
       flex: 0 0 50%;
-      max-height: 100%;
     }
     header .portrait img {
       display: block;
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      height: auto;
     }
     header .text {
       flex: 0 0 50%;
@@ -62,7 +59,6 @@
       text-decoration: none;
       border-radius: 4px;
     }
-
     section, footer {
       padding: 40px 20px;
     }
@@ -95,7 +91,6 @@
     .card h3 {
       color: #fff;
     }
-
     footer {
       background: #fff;
       text-align: center;
@@ -119,47 +114,14 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       text-align: left;
     }
-
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        height: auto;
-      }
-
-      header .portrait {
-        width: 100%;
-        height: auto;
-      }
-
-      header .portrait img {
-        height: auto;
-        object-fit: contain;
-      }
-
-      header .text {
-        width: 100%;
-        height: auto;
-        padding: 20px 15px;
-      }
-
-      header h1 {
-        font-size: 22px;
-        line-height: 1.2;
-        word-break: break-word;
-      }
-
-      header .text p {
-        font-size: 14px;
-        line-height: 1.4;
-      }
-
-      .cards {
-        flex-direction: column;
-      }
-      .card {
-        flex: 1 1 100%;
-      }
-    }
+@media (max-width: 1099px) {
+  html {
+    transform: scale(calc(100vw / 1100));
+    transform-origin: top left;
+    width: 1100px;
+    overflow-x: hidden;
+  }
+}
   </style>
 </head>
 <body>
@@ -206,7 +168,7 @@
     <div style="height: 18px;"></div>
 
     <section class="block" style="
-      background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('hintergrund-wasserzeichen.jpg') no-repeat center center;
+      background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('hintergrund-wasserzeichen.jpg') no-repeat center center;
       background-size: cover;
       color: #000;
       padding: 40px;
@@ -261,7 +223,7 @@
     </section>
 
     <section id="datenschutzerklaerung">
-      <h2>Datenschutzerklärung</h2>
+    <h2>Datenschutzerklärung</h2>
     <p>Der Schutz Ihrer persönlichen Daten ist mir wichtig. Ich verarbeite Ihre personenbezogenen Daten daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (insbesondere DSGVO und TMG).</p>
     <h3>1. Verantwortlicher</h3>
     <p>Christian Schreiner<br>Bahnhofstr. 24<br>83410 Laufen<br>E-Mail: info@steuerberater-schreiner.de</p>
@@ -283,23 +245,22 @@
     <p>Ich behalte mir vor, diese Datenschutzerklärung anzupassen, um sie an aktuelle rechtliche Anforderungen oder Änderungen meiner Leistungen anzupassen. Die jeweils aktuelle Version ist auf dieser Website abrufbar.</p>
   </section>
 
+  <script>
+    const btn = document.getElementById('showDatenschutz');
+    const datenschutz = document.getElementById('datenschutzerklaerung');
 
-    <script>
-      const btn = document.getElementById('showDatenschutz');
-      const datenschutz = document.getElementById('datenschutzerklaerung');
-
-      btn.addEventListener('click', function(event) {
-        event.preventDefault();
-        if (datenschutz.style.display === 'none' || datenschutz.style.display === '') {
-          datenschutz.style.display = 'block';
-          btn.textContent = 'Datenschutzrichtlinien verbergen';
-          datenschutz.scrollIntoView({ behavior: 'smooth' });
-        } else {
-          datenschutz.style.display = 'none';
-          btn.textContent = 'Datenschutzrichtlinien';
-        }
-      });
-    </script>
+    btn.addEventListener('click', function(event) {
+      event.preventDefault();
+      if (datenschutz.style.display === 'none' || datenschutz.style.display === '') {
+        datenschutz.style.display = 'block';
+        btn.textContent = 'Datenschutzrichtlinien verbergen';
+        datenschutz.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        datenschutz.style.display = 'none';
+        btn.textContent = 'Datenschutzrichtlinien';
+      }
+    });
+  </script>
   </div>
 </body>
 </html>

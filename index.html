@@ -3,53 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="format-detection" content="telephone=no">
- <meta name="viewport" content="width=1100, user-scalable=yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Steuerberater Christian Schreiner</title>
   <style>
     html {
       scroll-behavior: smooth;
-      overflow-x: auto;
     }
+
     * {
       box-sizing: border-box;
     }
+
     body {
       color: #222;
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background-color: #f5f5f5;
-      min-width: 1100px;
-      overflow-x: auto;
     }
+
     .wrapper {
-      width: 1100px;
+      max-width: 1100px;
       margin: 0 auto;
-      min-width: 1100px;
+      padding: 0 15px;
     }
+
     header {
       display: flex;
       flex-wrap: nowrap;
       background: #fff;
     }
+
     header .portrait {
       flex: 0 0 50%;
     }
+
     header .portrait img {
       display: block;
       width: 100%;
       height: auto;
     }
-    header .text {
-      flex: 0 0 50%;
-      padding: 60px 80px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+
+   header .text {
+  flex: 0 0 50%;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 480px;
+}
+
     header h1 {
-      font-size: 38px;
+      font-size: 42px;
       margin-bottom: 10px;
     }
+
     .button {
       display: inline-block;
       margin-top: 20px;
@@ -59,42 +66,51 @@
       text-decoration: none;
       border-radius: 4px;
     }
+
     section, footer {
       padding: 40px 20px;
     }
+
     .leistungen {
       background: #000;
       color: #fff;
       padding: 30px 20px 60px 20px;
     }
+
     .leistungen h2 {
       text-align: center;
       margin-bottom: 40px;
     }
+
     .cards {
       display: flex;
       flex-wrap: nowrap;
       gap: 20px;
       justify-content: space-between;
     }
+
     .card {
       flex: 0 0 30%;
       background: #111;
       border-radius: 8px;
       padding: 20px;
     }
+
     .card img {
       width: 100%;
       border-radius: 4px;
       margin-bottom: 15px;
     }
+
     .card h3 {
       color: #fff;
     }
+
     footer {
       background: #fff;
       text-align: center;
     }
+
     .kontakt a {
       display: inline-block;
       margin: 10px;
@@ -104,6 +120,7 @@
       text-decoration: none;
       border-radius: 4px;
     }
+
     #datenschutzerklaerung {
       display: none;
       padding: 20px;
@@ -115,12 +132,39 @@
       text-align: left;
     }
 
-    @media (max-width: 1099px) {
-      html {
-        transform: scale(calc(100vw / 1100));
-        transform-origin: top left;
-        width: 1100px;
-        overflow-x: hidden;
+    section.block {
+      background-size: cover;
+      background-position: center;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+
+      header .text {
+        padding: 30px 20px;
+      }
+
+      .cards {
+        flex-direction: column;
+      }
+
+      .card {
+        flex: 1 1 100%;
+      }
+
+      section[style*="display: flex"] {
+        flex-direction: column !important;
+      }
+
+      section[style*="display: flex"] > div {
+        flex: 1 1 100% !important;
+        padding: 20px !important;
+      }
+
+      section[style*="display: flex"] img {
+        height: auto !important;
       }
     }
   </style>
@@ -135,9 +179,9 @@
       </div>
       <div class="text">
         <h1>Ihr Steuer-<br>berater für<br>Ihren Erfolg</h1>
-        <p style="margin-top: 30px;">Sie haben Post vom Finanzamt und verstehen<br> nur Bahnhof?<br><br><br>
-          Sie möchten Ihre steuerliche Situation rechtssicher klären bevor es das Finanzamt tut?<br><br><br>
-          Ihr privater oder betrieblicher Steuerbescheid<br> ist fehlerhaft?<br><br><br>
+        <p style="margin-top: 30px;">Sie haben Post vom Finanzamt und verstehen nur Bahnhof?<br><br><br>
+          Sie möchten Ihre steuerliche Situation rechtssicher klären bevor Ihnen das Finanzamt zuvor kommt?<br><br><br>
+          Ihr privater oder betrieblicher Steuerbescheid ist fehlerhaft?<br><br><br>
           Einspruch eingelegt?<br>Klage erhoben?<br>Und jetzt?<br><br></p>
         <a href="#kontaktbereich" class="button">Nehmen Sie unverbindlich Kontakt auf</a>
       </div>
@@ -224,44 +268,44 @@
     </section>
 
     <section id="datenschutzerklaerung">
-    <h2>Datenschutzerklärung</h2>
-    <p>Der Schutz Ihrer persönlichen Daten ist mir wichtig. Ich verarbeite Ihre personenbezogenen Daten daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (insbesondere DSGVO und TMG).</p>
-    <h3>1. Verantwortlicher</h3>
-    <p>Christian Schreiner<br>Bahnhofstr. 24<br>83410 Laufen<br>E-Mail: info@steuerberater-schreiner.de</p>
-    <h3>2. Art der erhobenen Daten und Zweck der Verarbeitung</h3>
-    <p>Wenn Sie per E-Mail oder WhatsApp Kontakt mit mir aufnehmen, werden die von Ihnen freiwillig übermittelten Daten (z. B. Name, E-Mail-Adresse, Telefonnummer, Nachricht) verarbeitet, um Ihre Anfrage zu beantworten und zur weiteren Kommunikation.</p>
-    <h3>3. Rechtsgrundlagen der Datenverarbeitung</h3>
-    <p>Die Verarbeitung Ihrer Daten erfolgt gemäß Art. 6 Abs. 1 lit. b DSGVO (zur Durchführung vorvertraglicher Maßnahmen) sowie ggf. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an effizienter Kommunikation).</p>
-    <h3>4. Weitergabe von Daten</h3>
-    <p>Eine Weitergabe Ihrer Daten an Dritte erfolgt nur, wenn sie gesetzlich vorgeschrieben ist oder zur Vertragserfüllung erforderlich (z. B. Finanzbehörden, Steuerkanzlei-Software-Anbieter).</p>
-    <h3>5. Nutzung von WhatsApp</h3>
-    <p>Wenn Sie den WhatsApp-Link auf dieser Website verwenden, wird eine Verbindung zu den Servern von WhatsApp (ein Dienst der Meta Platforms Ireland Limited) aufgebaut. Dabei werden möglicherweise personenbezogene Daten wie Ihre IP-Adresse oder Geräteinformationen an Meta übermittelt. Ich empfehle Ihnen, sich vor der Nutzung über die <a href="https://www.whatsapp.com/legal/privacy-policy-eea" target="_blank" rel="noopener noreferrer">Datenschutzrichtlinien von WhatsApp</a> zu informieren.</p>
-    <h3>6. Cookies und Tracking</h3>
-    <p>Diese Website verwendet nach aktuellem Stand keine Cookies und keine Analyse- oder Tracking-Tools. Es werden keine personenbezogenen Daten automatisch erfasst oder gespeichert.</p>
-    <h3>7. Ihre Rechte</h3>
-    <p>Sie haben das Recht auf Auskunft über Ihre bei mir gespeicherten personenbezogenen Daten, das Recht auf Berichtigung, Löschung, Einschränkung der Verarbeitung sowie auf Widerspruch gegen die Verarbeitung. Kontaktieren Sie mich dazu bitte unter den oben genannten Kontaktdaten.</p>
-    <h3>8. Datensicherheit</h3>
-    <p>Ihre Daten werden nach dem aktuellen Stand der Technik vor unbefugtem Zugriff geschützt. Die Kommunikation per E-Mail oder WhatsApp erfolgt unverschlüsselt und kann unter Umständen von Dritten eingesehen werden.</p>
-    <h3>9. Änderungen dieser Datenschutzerklärung</h3>
-    <p>Ich behalte mir vor, diese Datenschutzerklärung anzupassen, um sie an aktuelle rechtliche Anforderungen oder Änderungen meiner Leistungen anzupassen. Die jeweils aktuelle Version ist auf dieser Website abrufbar.</p>
-  </section>
+      <h2>Datenschutzerklärung</h2>
+      <p>Der Schutz Ihrer persönlichen Daten ist mir wichtig. Ich verarbeite Ihre personenbezogenen Daten daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (insbesondere DSGVO und TMG).</p>
+      <h3>1. Verantwortlicher</h3>
+      <p>Christian Schreiner<br>Bahnhofstr. 24<br>83410 Laufen<br>E-Mail: info@steuerberater-schreiner.de</p>
+      <h3>2. Art der erhobenen Daten und Zweck der Verarbeitung</h3>
+      <p>Wenn Sie per E-Mail oder WhatsApp Kontakt mit mir aufnehmen, werden die von Ihnen freiwillig übermittelten Daten (z. B. Name, E-Mail-Adresse, Telefonnummer, Nachricht) verarbeitet, um Ihre Anfrage zu beantworten und zur weiteren Kommunikation.</p>
+      <h3>3. Rechtsgrundlagen der Datenverarbeitung</h3>
+      <p>Die Verarbeitung Ihrer Daten erfolgt gemäß Art. 6 Abs. 1 lit. b DSGVO (zur Durchführung vorvertraglicher Maßnahmen) sowie ggf. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an effizienter Kommunikation).</p>
+      <h3>4. Weitergabe von Daten</h3>
+      <p>Eine Weitergabe Ihrer Daten an Dritte erfolgt nur, wenn sie gesetzlich vorgeschrieben ist oder zur Vertragserfüllung erforderlich (z. B. Finanzbehörden, Steuerkanzlei-Software-Anbieter).</p>
+      <h3>5. Nutzung von WhatsApp</h3>
+      <p>Wenn Sie den WhatsApp-Link auf dieser Website verwenden, wird eine Verbindung zu den Servern von WhatsApp (ein Dienst der Meta Platforms Ireland Limited) aufgebaut. Dabei werden möglicherweise personenbezogene Daten wie Ihre IP-Adresse oder Geräteinformationen an Meta übermittelt. Ich empfehle Ihnen, sich vor der Nutzung über die <a href="https://www.whatsapp.com/legal/privacy-policy-eea" target="_blank" rel="noopener noreferrer">Datenschutzrichtlinien von WhatsApp</a> zu informieren.</p>
+      <h3>6. Cookies und Tracking</h3>
+      <p>Diese Website verwendet nach aktuellem Stand keine Cookies und keine Analyse- oder Tracking-Tools. Es werden keine personenbezogenen Daten automatisch erfasst oder gespeichert.</p>
+      <h3>7. Ihre Rechte</h3>
+      <p>Sie haben das Recht auf Auskunft über Ihre bei mir gespeicherten personenbezogenen Daten, das Recht auf Berichtigung, Löschung, Einschränkung der Verarbeitung sowie auf Widerspruch gegen die Verarbeitung. Kontaktieren Sie mich dazu bitte unter den oben genannten Kontaktdaten.</p>
+      <h3>8. Datensicherheit</h3>
+      <p>Ihre Daten werden nach dem aktuellen Stand der Technik vor unbefugtem Zugriff geschützt. Die Kommunikation per E-Mail oder WhatsApp erfolgt unverschlüsselt und kann unter Umständen von Dritten eingesehen werden.</p>
+      <h3>9. Änderungen dieser Datenschutzerklärung</h3>
+      <p>Ich behalte mir vor, diese Datenschutzerklärung anzupassen, um sie an aktuelle rechtliche Anforderungen oder Änderungen meiner Leistungen anzupassen. Die jeweils aktuelle Version ist auf dieser Website abrufbar.</p>
+    </section>
 
-  <script>
-    const btn = document.getElementById('showDatenschutz');
-    const datenschutz = document.getElementById('datenschutzerklaerung');
+    <script>
+      const btn = document.getElementById('showDatenschutz');
+      const datenschutz = document.getElementById('datenschutzerklaerung');
 
-    btn.addEventListener('click', function(event) {
-      event.preventDefault();
-      if (datenschutz.style.display === 'none' || datenschutz.style.display === '') {
-        datenschutz.style.display = 'block';
-        btn.textContent = 'Datenschutzrichtlinien verbergen';
-        datenschutz.scrollIntoView({ behavior: 'smooth' });
-      } else {
-        datenschutz.style.display = 'none';
-        btn.textContent = 'Datenschutzrichtlinien';
-      }
-    });
-  </script>
+      btn.addEventListener('click', function(event) {
+        event.preventDefault();
+        if (datenschutz.style.display === 'none' || datenschutz.style.display === '') {
+          datenschutz.style.display = 'block';
+          btn.textContent = 'Datenschutzrichtlinien verbergen';
+          datenschutz.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          datenschutz.style.display = 'none';
+          btn.textContent = 'Datenschutzrichtlinien';
+        }
+      });
+    </script>
   </div>
 </body>
 </html>
